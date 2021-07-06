@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+option csharp_namespace = "MeterReaderWeb.Protos";
+
+import "Protos/enums.proto";
+import "google/protobuf/timestamp.proto";
+
+service MeterReadingService {
+	rpc AddReading(ReadingMessage) returns (StatusMessage);
+}
+
+message ReadingMessage {
+	int32 customerId = 1;
+	int32 readingValue = 2;
+	string notes = 3;
+	ReadingStatus successful = 4;
+	google.protobuf.Timestamp readingTime = 5;
+}
+
+
+message StatusMessage {
+	string message = 1;
+	ReadingStatus success = 2;
+}
