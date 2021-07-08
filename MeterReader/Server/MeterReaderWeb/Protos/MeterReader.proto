@@ -2,11 +2,13 @@ syntax = "proto3";
 
 option csharp_namespace = "MeterReaderWeb.Protos";
 
-import "Protos/enums.proto";
+import "enums.proto";
 import "google/protobuf/timestamp.proto";
+//import "google/protobuf/empty.proto";
 
 service MeterReadingService {
 	rpc AddReading(ReadingPacket) returns (StatusMessage);
+	//rpc Test(google.protobuf.empty) returns (google.protobuf.empty);
 }
 
 message ReadingPacket {
