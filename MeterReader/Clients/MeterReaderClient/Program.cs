@@ -19,6 +19,7 @@ namespace MeterReaderClient
                 .ConfigureServices((hostContext, services) =>
                 {
                     services.AddHostedService<Worker>();
+                    services.AddTransient<ReadingFactory>();
                 });
     }
 }

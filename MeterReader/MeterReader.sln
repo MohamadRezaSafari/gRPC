@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MeterReaderLib", "Server\Me
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MeterReaderWeb", "Server\MeterReaderWeb\MeterReaderWeb.csproj", "{EBA74C48-2293-4E36-8609-06FDCF03380C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeterReaderClient", "Clients\MeterReaderClient\MeterReaderClient.csproj", "{10D4C1B9-3FFD-4064-9E15-6EC367D38A50}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MeterReaderClient", "Clients\MeterReaderClient\MeterReaderClient.csproj", "{10D4C1B9-3FFD-4064-9E15-6EC367D38A50}"
+EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Clients", "Clients\Clients.pyproj", "{74AFBF71-E58B-4353-9809-EA8618B29406}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,6 +33,8 @@ Global
 		{10D4C1B9-3FFD-4064-9E15-6EC367D38A50}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{10D4C1B9-3FFD-4064-9E15-6EC367D38A50}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{10D4C1B9-3FFD-4064-9E15-6EC367D38A50}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74AFBF71-E58B-4353-9809-EA8618B29406}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74AFBF71-E58B-4353-9809-EA8618B29406}.Release|Any CPU.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -39,6 +43,7 @@ Global
 		{B59F7102-D278-4F92-95A4-D77CB55D2ED1} = {7E81B53F-A3A4-433D-8CAD-6E5053ED0076}
 		{EBA74C48-2293-4E36-8609-06FDCF03380C} = {7E81B53F-A3A4-433D-8CAD-6E5053ED0076}
 		{10D4C1B9-3FFD-4064-9E15-6EC367D38A50} = {2953D257-F59F-456E-83DE-464BF9D31A2E}
+		{74AFBF71-E58B-4353-9809-EA8618B29406} = {2953D257-F59F-456E-83DE-464BF9D31A2E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {73EE4F8E-3631-4078-98B2-17AB6187EB18}
