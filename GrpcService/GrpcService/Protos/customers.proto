@@ -7,6 +7,12 @@ package customers;
 
 service Customer {
 	rpc GetCustomerInfo (CustomerFindModel) returns (CustomerDataModel);
+	rpc GetAllCustomers (AllCustomerModel) returns (stream CustomerDataModel);
+}
+
+
+message AllCustomerModel {
+
 }
 
 message CustomerFindModel {
